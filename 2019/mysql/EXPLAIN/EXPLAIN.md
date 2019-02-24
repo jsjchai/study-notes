@@ -45,7 +45,7 @@ EXPLAIN FORMAT=JSON select * from `user` where username = 'test';
 ```
 ###### EXPLAIN输出列含义
 
-![EXPLAIN输出列](https://github.com/jsjchai/blog/blob/master/2019/mysql/EXPLAIN/EXPLAIN%E8%BE%93%E5%87%BA%E5%88%97.png)
+![EXPLAIN输出列](https://github.com/jsjchai/study-notes/blob/master/2019/mysql/EXPLAIN/EXPLAIN%E8%BE%93%E5%87%BA%E5%88%97.png)
 * id (JSON name: select_id)
 
 >选择标识符。在使用UNION语句时为NULL
