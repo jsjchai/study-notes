@@ -10,13 +10,17 @@
 ### 前置步骤
 1. 虚拟机安装3台centos7服务器，修改它们的hostname,为node1,node2,node3
 2. 指定node1服务器为namenode,其他机器为datanode
+```shell
     hostnamectl set-hostname node1
     hostnamectl set-hostname node2
     hostnamectl set-hostname node3 
+```
 3. 查看三台服务器ip地址，修改配置文件/etc/hosts/<br>
+```text
     192.168.199.101 node1<br>
     192.168.199.102 node2<br>
     192.168.199.103 node3<br>
+```
 
 ### 安装步骤
 1. 下载安装包，解压，配置环境变量
