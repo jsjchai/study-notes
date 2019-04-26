@@ -2,8 +2,8 @@
 安装包下载：https://hadoop.apache.org/releases.html
 
 ### 前提
-Apache Hadoop 3.x现在仅支持Java 8
-从2.7.x到2.x的Apache Hadoop支持Java 7和8
+* Apache Hadoop 3.x现在仅支持Java 8
+* 从2.7.x到2.x的Apache Hadoop支持Java 7和8
 ### 安装环境
   centos7
 
