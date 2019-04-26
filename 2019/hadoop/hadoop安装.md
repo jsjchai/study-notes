@@ -1,3 +1,4 @@
+## hadoop3.2.0安装
 安装包下载：https://hadoop.apache.org/releases.html
 
 ### 前提
@@ -69,5 +70,5 @@ hdfs dfsadmin -report
 ```shell
 #查看hadoop端口
 netstat -ntlp|grep java
-http://192.168.199.1:9870
+浏览器打开http://node1:9870
 ```
