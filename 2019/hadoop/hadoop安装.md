@@ -7,7 +7,7 @@ Apache Hadoop 3.x现在仅支持Java 8
 ### 安装环境
   centos7
 
-### 前提
+### 前置步骤
 1. 虚拟机安装3台centos7服务器，修改它们的hostname,为node1,node2,node3
 2. 指定node1服务器为namenode,其他机器为datanode
     hostnamectl set-hostname node1
@@ -40,14 +40,14 @@ namenode
 ```xml
 <property>
 	<name>dfs.namenode.name.dir</name>
-	<value>file:///D:/java/hadoop-3.1.2/data/namenode</value>
+	<value>/usr/local/hadoop-3.2.0/data/namenode</value>
 </property>
 ```
 datanode
 ```xml
 <property>
 	<name>dfs.datanode.name.dir</name>
-	<value>file:///D:/java/hadoop-3.1.2/data/datanode</value>
+	<value>/usr/local/hadoop-3.2.0/data/datanode</value>
 </property>
 ```
 5. 指定一台机器为namenode，其他机器为datanode,namenode机器第一次启动HDFS时，必须对其进行格式化。将新的分布式文件系统格式化为hdfs
