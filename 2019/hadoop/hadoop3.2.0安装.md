@@ -1,7 +1,7 @@
 ## hadoop3.2.0安装
 安装包下载：https://hadoop.apache.org/releases.html
 
-### 前提
+### 安装须知
 * Apache Hadoop 3.x现在仅支持Java 8
 * 从2.7.x到2.x的Apache Hadoop支持Java 7和8
 ### 安装环境
@@ -9,12 +9,13 @@
 
 ### 前置步骤
 1. 虚拟机安装3台centos7服务器，修改它们的hostname,为node1,node2,node3
-2. 指定node1服务器为namenode,其他机器为datanode
 ```shell
     hostnamectl set-hostname node1
     hostnamectl set-hostname node2
     hostnamectl set-hostname node3 
 ```
+2. 指定node1服务器为namenode,其他机器为datanode
+
 3. 查看三台服务器ip地址，修改配置文件/etc/hosts/<br>
 ```text
     192.168.199.101 node1
@@ -28,9 +29,9 @@
   tar zxvf  hadoop-3.2.0.tar.gz
 ```
 2. hadoop支持三种安装，本次安装采用全分布式模式
-  * 本地（独立）模式
-  * 伪分布式模式
-  * 全分布式模式      
+  * [本地模式](https://hadoop.apache.org/docs/r3.2.0/hadoop-project-dist/hadoop-common/SingleCluster.html)
+  * [伪分布式模式](https://hadoop.apache.org/docs/r3.2.0/hadoop-project-dist/hadoop-common/SingleCluster.html#Pseudo-Distributed_Operation)
+  * [完全分布式模式](https://hadoop.apache.org/docs/r3.2.0/hadoop-project-dist/hadoop-common/SingleCluster.html#Fully-Distributed_Operation)      
 3. 修改etc/hadoop/core-site.xml文件
 ```xml
 <property>
@@ -58,9 +59,6 @@ datanode
 ```shell
 #初始化hdfs
 $HADOOP_HOME/bin/hdfs namenode -format
-#hadoop 2.x
-$HADOOP_HOME/sbin/hadoop-daemon.sh start namenode
-$HADOOP_HOME/sbin/hadoop-daemon.sh start datanode
 #hadoop 3.x
 hdfs --daemon start namenode
 hdfs --daemon start datanode
