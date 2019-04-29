@@ -76,9 +76,19 @@ netstat -ntlp|grep java
 浏览器打开http://node1:9870
 ```
 ### 配置各服务器免密登录
- 由于分布式环境，hadoop一台一台启动比较麻烦，可通过修改$HADOOP_HOME/etc/hadoop/workers配置其他hadoop节点hostname,配置文件内容如下
+ 由于分布式环境，hadoop服务一台一台启动比较麻烦，可通过修改$HADOOP_HOME/etc/hadoop/workers配置其他hadoop节点hostname,配置文件内容如下
  ```
  nodel
  node2
  node3
+ ```
+ 1. 在node1上生成ssh公钥
+ ```shell
+ ssh-keygen -t rsa
+ ```
+ 2. 将公钥复制到所有机器上
+ ```shell
+ ssh-copy-id node1
+ ssh-copy-id node2
+ ssh-copy-id node3
  ```
