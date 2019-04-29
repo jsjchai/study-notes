@@ -27,6 +27,7 @@
 1. 下载安装包，解压，配置环境变量
 ```shell
   tar zxvf  hadoop-3.2.0.tar.gz
+  export HADOOP_HOME=/usr/local/hadoop3.2.0
 ```
 2. hadoop支持三种安装，本次安装采用全分布式模式
   * [本地模式](https://hadoop.apache.org/docs/r3.2.0/hadoop-project-dist/hadoop-common/SingleCluster.html)
