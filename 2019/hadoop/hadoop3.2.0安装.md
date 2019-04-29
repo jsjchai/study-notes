@@ -39,7 +39,7 @@
 	<value>hdfs://node1:9000</value>
 </property>
 ```
-4. 配置hdsf数据保存文件路径和日志保存路径
+4. 配置hdsf数据保存文件路径
 
 namenode
 ```xml
@@ -74,3 +74,10 @@ hdfs dfsadmin -report
 netstat -ntlp|grep java
 浏览器打开http://node1:9870
 ```
+### 配置各服务器免密登录
+ 由于分布式环境，hadoop一台一台启动比较麻烦，可通过修改$HADOOP_HOME/etc/hadoop/workers配置其他hadoop节点hostname,配置文件内容如下
+ ```
+ nodel
+ node2
+ node3
+ ```
