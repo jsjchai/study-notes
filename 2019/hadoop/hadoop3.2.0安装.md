@@ -45,6 +45,10 @@
 		<name>fs.defaultFS</name>
 		<value>hdfs://node1:9000</value>
 	</property>
+	<property>
+		<name>hadoop.tmp.dir</name>
+		<value>/home/hadoop/tmp/</value>
+	</property>
 	```
 * hdfs-site.xml
 	* namenode
