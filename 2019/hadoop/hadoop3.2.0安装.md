@@ -33,30 +33,41 @@
   * [本地模式](https://hadoop.apache.org/docs/r3.2.0/hadoop-project-dist/hadoop-common/SingleCluster.html)
   * [伪分布式模式](https://hadoop.apache.org/docs/r3.2.0/hadoop-project-dist/hadoop-common/SingleCluster.html#Pseudo-Distributed_Operation)
   * [完全分布式模式](https://hadoop.apache.org/docs/r3.2.0/hadoop-project-dist/hadoop-common/SingleCluster.html#Fully-Distributed_Operation)      
-3. 修改etc/hadoop/core-site.xml文件
-```xml
-<property>
-	<name>fs.defaultFS</name>
-	<value>hdfs://node1:9000</value>
-</property>
 ```
-4. 配置hdsf数据保存文件路径
-
-namenode
-```xml
-<property>
-	<name>dfs.namenode.name.dir</name>
-	<value>/usr/local/hadoop-3.2.0/data/namenode</value>
-</property>
+3. 修改配置文件
+```shell
+  cd /usr/local/hadoop3.2.0/etc/hadoop
 ```
-datanode
-```xml
-<property>
-	<name>dfs.datanode.name.dir</name>
-	<value>/usr/local/hadoop-3.2.0/data/datanode</value>
-</property>
-```
-5. 指定一台机器为namenode，其他机器为datanode,namenode机器第一次启动HDFS时，必须对其进行格式化。将新的分布式文件系统格式化为hdfs
+* core-site.xml
+	```xml
+	<property>
+		<name>fs.defaultFS</name>
+		<value>hdfs://node1:9000</value>
+	</property>
+	```
+* hdfs-site.xml
+	* namenode
+	```xml
+	<property>
+		<name>dfs.namenode.name.dir</name>
+		<value>/usr/local/hadoop-3.2.0/data/namenode</value>
+	</property>
+	```
+	* datanode
+	```xml
+	<property>
+		<name>dfs.datanode.name.dir</name>
+		<value>/usr/local/hadoop-3.2.0/data/datanode</value>
+	</property>
+	```
+* mapred-site.xml
+	```xml
+	<property>
+		<name>mapreduce.framework.name</name>
+		<value>yarn</value>
+	</property>
+	```
+4. 指定一台机器为namenode，其他机器为datanode,namenode机器第一次启动HDFS时，必须对其进行格式化。将新的分布式文件系统格式化为hdfs
 ```shell
 #初始化hdfs
 $HADOOP_HOME/bin/hdfs namenode -format
@@ -64,12 +75,12 @@ $HADOOP_HOME/bin/hdfs namenode -format
 hdfs --daemon start namenode
 hdfs --daemon start datanode
 ```
-6.  命令行方式查看hadoop集群状态
+5.  命令行方式查看hadoop集群状态
 ```shell
 hdfs dfsadmin -report
 ```
 
-7.  web界面方式查看hadoop集群状态
+6.  web界面方式查看hadoop集群状态
 ```shell
 #查看hadoop端口
 netstat -ntlp|grep java
