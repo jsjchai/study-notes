@@ -35,9 +35,11 @@
   * [完全分布式模式](https://hadoop.apache.org/docs/r3.2.0/hadoop-project-dist/hadoop-common/SingleCluster.html#Fully-Distributed_Operation)      
 ```
 3. 修改配置文件
+进入hadoop配置目录下
 ```shell
   cd /usr/local/hadoop3.2.0/etc/hadoop
 ```
+
 * core-site.xml
 	```xml
 	<property>
@@ -67,6 +69,17 @@
 		<value>yarn</value>
 	</property>
 	```
+* yarn-site.xml
+```xml
+	<property>
+		<name>yarn.nodemanager.aux-services</name>
+		<value>mapreduce_shuffle</value>
+	</property>
+	<property>
+		<name>yarn.nodemanager.aux-services.mapreduce_shuffle.class</name>
+		<value>org.apache.hadoop.mapred.ShuffleHandler</value>
+	</property>
+```
 4. 指定一台机器为namenode，其他机器为datanode,namenode机器第一次启动HDFS时，必须对其进行格式化。将新的分布式文件系统格式化为hdfs
 ```shell
 #初始化hdfs
