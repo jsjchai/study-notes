@@ -38,7 +38,7 @@
 ```shell
   cd /usr/local/hadoop3.2.0/etc/hadoop
 ```
-
+修改配置文件
 * core-site.xml
 	```xml
 	<property>
