@@ -12,7 +12,7 @@
 ```shell
     hostnamectl set-hostname node1
     hostnamectl set-hostname node2
-    hostnamectl set-hostname node3 
+    hostnamectl set-hostname node3
 ```
 2. 指定node1服务器为namenode,其他机器为datanode
 
@@ -119,3 +119,4 @@ netstat -ntlp|grep java
  ssh-copy-id node2
  ssh-copy-id node3
  ```
+ 3. 启动服务
