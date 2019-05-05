@@ -120,3 +120,10 @@ netstat -ntlp|grep java
  ssh-copy-id node3
  ```
  3. 启动服务
+ 
+ |shell|作用|
+ |--|--|
+ |start-dfs.sh|启动所有hdfs相关服务namenode、SecondaryNameNode及datanode|
+ |start-yarn.sh|启动所有yarn相关服务resourcemanager和nodemanagers|
+ |start-all.sh|启动所有服务namenode、SecondaryNameNode、datanode、resourcemanager和nodemanagers|
+ |mr-jobhistory-daemon.sh|web方式查看job的历史运行情况JobHistoryServer(./mr-jobhistory-daemon.sh start historyserver)|
