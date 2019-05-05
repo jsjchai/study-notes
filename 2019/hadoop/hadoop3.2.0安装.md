@@ -87,11 +87,11 @@
 ```shell
 #初始化hdfs
 $HADOOP_HOME/bin/hdfs namenode -format
-#hadoop 3.x
+#hdfs启动服务
 hdfs --daemon start namenode
 hdfs --daemon start datanode
 ```
-5.  命令行方式查看hadoop集群状态
+5.  命令行方式查看hdfs集群状态
 ```shell
 hdfs dfsadmin -report
 ```
