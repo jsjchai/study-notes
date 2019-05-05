@@ -33,7 +33,7 @@
   * [本地模式](https://hadoop.apache.org/docs/r3.2.0/hadoop-project-dist/hadoop-common/SingleCluster.html)
   * [伪分布式模式](https://hadoop.apache.org/docs/r3.2.0/hadoop-project-dist/hadoop-common/SingleCluster.html#Pseudo-Distributed_Operation)
   * [完全分布式模式](https://hadoop.apache.org/docs/r3.2.0/hadoop-project-dist/hadoop-common/SingleCluster.html#Fully-Distributed_Operation)      
-3. 修改配置文件
+3. 修改配置文件<br>
 进入hadoop配置目录下
 ```shell
   cd /usr/local/hadoop3.2.0/etc/hadoop
