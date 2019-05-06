@@ -13,8 +13,13 @@
 1. 下载openjdk10作为Bootstrap JDK
    * 下载地址：http://jdk.java.net/java-se-ri/10
    * 解压到/opt目录
-2. 预编译
+2. 配置编译参数
   ```shell
   mkdir /usr/local/jdk11
   ./configure --with-boot-jdk=/opt/jdk-10  --prefix=/usr/local/jdk11
+  ```
+ 3. 编译make JOBS=N
+  ```shell
+  make JOBS=4
+  make install
   ```
