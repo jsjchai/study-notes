@@ -21,5 +21,5 @@
  3. 编译make JOBS=N
   ```shell
   make JOBS=4
-  make install
+  make images
   ```
