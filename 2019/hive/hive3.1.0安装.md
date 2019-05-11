@@ -61,6 +61,18 @@ centos7
         <description>Driver class name for a JDBC metastore</description>
       </property>
     ```
- 3.启动hive
+ 3. 启动hive
+ ```
+ # 初始化hive元数据表，如果数据源为Derby，将mysql换为Derby（要先启动好mysql和hadoop,数据源为Derby不需要启动 ）
+ schematool  -initSchema -dbType mysql
+ hive --service metastore &
+ hive --service hiveserver2 &
+ ```
+ 4. 客户端访问测试
+ ```
+ hive
+ # 进入hive命令行
+ hive> show databases;
+ ```
     
     
