@@ -30,6 +30,7 @@ centos7
   * 将xml文件中所有${system:java.io.tmpdir}替换为/usr/local/apache-hive-3.1.1/tmp
   * 将xml文件中所有${system:user.name}替换为root
   * 配置metastore元数据库为mysql(此项可不配，hive默认使用Derby数据库)
+    需要将相应的jdbcjar包复制到${HIVE_HOME}/lib下
     ```xml
       <property>
         <name>hive.metastore.db.type</name>
@@ -60,3 +61,6 @@ centos7
         <description>Driver class name for a JDBC metastore</description>
       </property>
     ```
+ 3.启动hive
+    
+    
