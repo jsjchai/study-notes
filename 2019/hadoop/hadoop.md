@@ -1,7 +1,7 @@
-### hadoop
+### Apache Hadoop
 >Apache Hadoop是一个开源框架，允许使用简单的编程模型在跨计算机集群的分布式环境中存储和处理大数据。它旨在从单个服务器扩展到数千台计算机，每台计算机都提供本地计算和存储。
 
-### hadoop有哪些优点
+### Apache hadoop有哪些优点
   * 能够快速存储和处理大量任何类型的数据
   * 计算能力
   * 容错
@@ -9,9 +9,10 @@
   * 低成本
   * 可扩展性
 
-#### hadoop核心模块
+### Apache hadoop核心模块
 
 #### HDFS 分布式文件系统
+![image](https://hadoop.apache.org/docs/r3.2.0/hadoop-project-dist/hadoop-hdfs/images/hdfsarchitecture.png)
 > HDFS可能由成百上千的服务器所构成，每个服务器上存储着文件系统的部分数据。HDFS采用master/slave架构。一个HDFS集群是由一个Namenode和一定数目的Datanodes组成。
 
 * namenode
@@ -32,3 +33,6 @@ Map/Reduce框架由一个单独的master JobTracker 和每个集群节点一个s
 
 #### Hadoop Common
 > 支持其他Hadoop模块的常用实用程序
+
+### 参考文档
+* [Apache Hadoop 3.2.0](https://hadoop.apache.org/docs/r3.2.0/index.html)
