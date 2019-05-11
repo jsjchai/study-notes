@@ -74,5 +74,7 @@ centos7
  # 进入hive命令行
  hive> show databases;
  ```
+ #### 参考文档
+ * [Hive GettingStarted](https://cwiki.apache.org/confluence/display/Hive/GettingStarted)
     
     
