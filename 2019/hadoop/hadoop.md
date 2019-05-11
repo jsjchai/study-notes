@@ -9,7 +9,7 @@
   * 低成本
   * 可扩展性
 
-#### hadoo核心模块
+#### hadoop核心模块
 
 #### HDFS 分布式文件系统
 > HDFS可能由成百上千的服务器所构成，每个服务器上存储着文件系统的部分数据。HDFS采用master/slave架构。一个HDFS集群是由一个Namenode和一定数目的Datanodes组成。
