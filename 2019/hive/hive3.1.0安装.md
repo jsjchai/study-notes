@@ -26,3 +26,37 @@ centos7
   ```shell
     cp hive-default.xml.template hive-site.xml
   ```
+  修改文件文件以下几项内容：
+  * 将xml文件中所有${system:java.io.tmpdir}替换为/usr/local/apache-hive-3.1.1/tmp
+  * 将xml文件中所有${system:user.name}替换为root
+  * 配置metastore元数据库为mysql(此项可不配，hive默认使用Derby数据库)
+    ```xml
+      <property>
+        <name>hive.metastore.db.type</name>
+        <value>mysql</value>
+        <description>
+        Expects one of [derby, oracle, mysql, mssql, postgres].
+        Type of database used by the metastore. Information schema &amp; JDBCStorageHandler depend on it.
+        </description>
+      </property>
+      <property>
+         <name>javax.jdo.option.ConnectionURL</name>
+         <value>jdbc:mysql://127.0.0.1:3306/metastore_db?createDatabaseIfNotExist=true&amp;characterEncoding=UTF-8&amp;useSSL=false</value>
+         <description>
+          JDBC connect string for a JDBC metastore.
+          To use SSL to encrypt/authenticate the connection, provide database-specific SSL flag in the connection URL.
+          For example, jdbc:postgresql://myhost/db?ssl=true for postgres database.
+         </description>
+      </property>
+      <property>
+        <name>javax.jdo.option.ConnectionPassword</name>
+        <value>root</value>
+        <description>password to use against metastore database</description>
+      </property>
+      <!--mysql8.x版本驱动，mysql5.x配置为com.mysql.jdbc.driver-->
+      <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>
+        <value>com.mysql.cj.jdbc.Driver</value>
+        <description>Driver class name for a JDBC metastore</description>
+      </property>
+    ```
