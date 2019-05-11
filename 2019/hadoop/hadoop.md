@@ -33,7 +33,7 @@ Map/Reduce框架由一个单独的master JobTracker 和每个集群节点一个s
 每个应用程序ApplicationMaster实际上是一个特定于框架的库，其任务是协调来自ResourceManager的资源，并与NodeManager一起执行和监视任务。
 
 #### Hadoop Common
-> 支持其他Hadoop模块的常用实用程序
+> 支持其他Hadoop模块的常用实用程序(java libraries)
 
 ### 参考文档
 * [Apache Hadoop 3.2.0](https://hadoop.apache.org/docs/r3.2.0/index.html)
