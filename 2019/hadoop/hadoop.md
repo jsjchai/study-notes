@@ -10,6 +10,7 @@
   * 可扩展性
 
 ### Apache hadoop核心模块
+![image](https://github.com/jsjchai/study-notes/blob/master/2019/hadoop/images/hadoop%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6.png)
 
 #### HDFS 分布式文件系统
 ![image](https://hadoop.apache.org/docs/r3.2.0/hadoop-project-dist/hadoop-hdfs/images/hdfsarchitecture.png)
