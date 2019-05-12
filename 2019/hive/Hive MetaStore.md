@@ -6,8 +6,15 @@
 
 ## hive相关的元数据表
 hive的元数据信息通常存储在关系型数据库中,默认保存在内嵌的Derby数据库中。如若要使用mysql保存元数据信息，需要修改hive-site.xml来配置。<br>
+VERSION(存储hive版本信息)
 
-* DBS （存储Hive中所有数据库的基本信息）
+| 字段 | 含义 |
+| ------ | ------ |
+| VER_ID | 主键 |
+| SCHEMA_VERSION |版本信息 |
+| VERSION_COMMENT |详细版本信息|
+
+DBS （存储Hive中所有数据库的基本信息）
 
 | 字段 | 含义 |
 | ------ | ------ |
@@ -17,7 +24,7 @@ hive的元数据信息通常存储在关系型数据库中,默认保存在内嵌
 | NAME| 数据库名 | 
 | OWNER_TYPE| 所有者角色 | 
 
-* TBLS（存储Hive表、视图、索引表的基本信息）
+TBLS（存储Hive表、视图、索引表的基本信息）
 
 | 字段 | 含义 |
 | ------ | ------ |
@@ -33,7 +40,7 @@ hive的元数据信息通常存储在关系型数据库中,默认保存在内嵌
 | VIEW_EXPANDED_TEXT| 视图的详细HQL语句 |
 | VIEW_ORIGINAL_TEXT| 视图的原始HQL语句 |
 
-* DATABASE_PARAMS（存储数据库的相关参数，在CREATE DATABASE时候用）
+DATABASE_PARAMS（存储数据库的相关参数，在CREATE DATABASE时候用）
 
 | 字段 | 含义 |
 | ------ | ------ |
@@ -41,7 +48,7 @@ hive的元数据信息通常存储在关系型数据库中,默认保存在内嵌
 | PARAM_KEY| 参数名 |
 | PARAM_VALUE| 参数值 | 
 
-* TABLE_PARAMS（存储数据库的相关参数，在CREATE DATABASE时候用）
+TABLE_PARAMS（存储数据库的相关参数，在CREATE DATABASE时候用）
 
 | 字段 | 含义 |
 | ------ | ------ |
