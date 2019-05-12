@@ -153,7 +153,7 @@ INSERT INTO TABLE pageviews
 ```sql
 show  partitions pageviews;
 ```
-删除分区
+* 删除分区
 ```sql
 alter table pageviews drop partition(datestamp='2014-09-21');
 ```
