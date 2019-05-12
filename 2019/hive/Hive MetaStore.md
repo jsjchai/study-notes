@@ -9,7 +9,7 @@ hive的元数据信息通常存储在关系型数据库中,默认保存在内嵌
 VERSION(存储hive版本信息)
 
 | 字段 | 含义 |
-| ------ | ------ |
+| :--: | :--: |
 | VER_ID | 主键 |
 | SCHEMA_VERSION |版本信息 |
 | VERSION_COMMENT |详细版本信息|
