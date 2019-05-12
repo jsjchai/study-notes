@@ -28,7 +28,7 @@
 * 支持Hbase作为MeateStore数据源
 * 不建议使用MapReduce，建议使用Tez或Spark
 * 支持存储过程
-* Metastore可以单独运行
+* Metastore可以独立于hive其他组件运行
 #### 参考文档
   * [About Hive 1 – Preview](http://bitnine.net/blog-computing/about-hive-1-preview/)
   * [Hive Tutorial](https://cwiki.apache.org/confluence/display/Hive/Tutorial#Tutorial-WhatIsHive)
