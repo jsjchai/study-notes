@@ -126,7 +126,7 @@ ALTER TABLE employee CHANGE name  name varchar(50) FIRST;
 ALTER TABLE employee CHANGE age age SMALLINT AFTER name;
 ```
 
-分区
+### 分区
 * 添加分区
 ```shell
 ALTER TABLE employee ADD PARTITION (dt='2019-04-29')
