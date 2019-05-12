@@ -1,11 +1,8 @@
 ## MetaStore
 >Hive表和分区的所有元数据都可以通过Hive Metastore访问。启动远程metastore后,hive客户端连接metastore服务，从而可以从数据库（如：mysql）查询到元数据信息。metastore服务端和客户端通信是通过thrift协议。
-## Remote MetaStore
-![image](/uploads/cb0c99b966579e9222cf00917cafea8f/image.png)
 
 ## hive相关的元数据表
 hive的元数据信息通常存储在关系型数据库中,默认保存在内嵌的Derby数据库中。如若要使用mysql保存元数据信息，需要修改hive-site.xml来配置。<br>
-[HiveMetaStoreE-R图.pdf](/uploads/55de66f59b75c66bc97ac2cb78168423/HiveMetaStoreE-R图.pdf)
 
 DBS （存储Hive中所有数据库的基本信息）
 
