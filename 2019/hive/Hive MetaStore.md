@@ -17,7 +17,7 @@ VERSION(存储hive版本信息)
 DBS （存储Hive中所有数据库的基本信息）
 
 | 字段 | 含义 |
-| ------ | ------ |
+| :--: | :--: |
 | DB_ID | 数据库id |
 | DESC | 数据库描述 | 
 | DB_LOCATION_URI| 数据库HDFS路径 | 
@@ -27,7 +27,7 @@ DBS （存储Hive中所有数据库的基本信息）
 TBLS（存储Hive表、视图、索引表的基本信息）
 
 | 字段 | 含义 |
-| ------ | ------ |
+| :--: | :--: |
 | TBL_ID| 表ID |
 | CREATE_TIME| 创建时间 |
 | DB_ID | 数据库id |
@@ -43,7 +43,7 @@ TBLS（存储Hive表、视图、索引表的基本信息）
 DATABASE_PARAMS（存储数据库的相关参数，在CREATE DATABASE时候用）
 
 | 字段 | 含义 |
-| ------ | ------ |
+| :--: | :--: |
 | DB_ID | 数据库id |
 | PARAM_KEY| 参数名 |
 | PARAM_VALUE| 参数值 | 
@@ -51,7 +51,7 @@ DATABASE_PARAMS（存储数据库的相关参数，在CREATE DATABASE时候用�
 TABLE_PARAMS（存储数据库的相关参数，在CREATE DATABASE时候用）
 
 | 字段 | 含义 |
-| ------ | ------ |
+| :--: | :--: |
 | TBL_ID| 表ID |
 | PARAM_KEY| 参数名 |
 | PARAM_VALUE| 参数值 | 
