@@ -1,4 +1,7 @@
 ## Hive常用SQL举例
+> [DDL](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL)<br>
+  [DML](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DML)
+
 ### 数据库
 * 新建数据库,并添加扩展参数
 ```sql
