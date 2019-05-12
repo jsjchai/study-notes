@@ -1,3 +1,4 @@
+## Hive常用SQL举例
 ### 数据库
 * 新建数据库,并添加扩展参数
 ```sql
@@ -15,8 +16,6 @@ ALTER DATABASE d_test SET DBPROPERTIES ("createor"="tinahe1");
 ```sql
 DESC DATABASE EXTENDED d_test;
 ```
-举例：
-![image](/uploads/6b9a5be6084d3004f4da83bee0e68091/image.png)
 * 使用数据库
 ```sql
 use d_test;
