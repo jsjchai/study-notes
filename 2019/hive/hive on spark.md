@@ -16,8 +16,23 @@
 在hive[官方文档](https://cwiki.apache.org/confluence/display/Hive/Configuration+Properties)中明确说明MapReduce在hive2.0已被弃用,具体原因见[deprecate MR in Hive 2.0](https://issues.apache.org/jira/browse/HIVE-12300)
 
 ### 配置spark为默认执行引擎
-1. 修改hive配置文件
+1. 将sparkjar包复制到$HIVE_HOME/lib下
+  hive2.2.0版本及Spark 2.0.0版本，复制以下jar包
+  * scala-library-X.XX.XX.jar
+  * spark-core_X.XX-X.X.X.jar
+  * spark-network-common_X.XX-X.X.X.jar .
+  ```shell
+   cd /usr/local/apache-hive-3.1.1/lib
+   cp /usr/local/spark-2.4.3-bin-hadoop2.7/jars/scala-library-2.11.12.jar .
+   cp /usr/local/spark-2.4.3-bin-hadoop2.7/jars/spark-core_2.11-2.4.3.jar .
+   cp /usr/local/spark-2.4.3-bin-hadoop2.7/jars/spark-network-common_2.11-2.4.3.jar .
+  ```
+  hive2.2.0以下版本复制spark-assembly.*.jar
+2. 修改hive配置文件hive-site.xml
   ```xml
-
+  <property>
+    <name>hive.execution.engine</name>
+    <value>spark</value>
+  </property>
   ```
 
