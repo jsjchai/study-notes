@@ -28,6 +28,10 @@
     ```shell
     cd spark-2.3.0
     ./dev/make-distribution.sh --name "hadoop2-without-hive" --tgz "-Pyarn,hadoop-provided,hadoop-2.7,parquet-provided,orc-provided"
+    mv spark-2.3.0-bin-hadoop2-without-hive.tgz /usr/local/
+    cd /usr/local/
+    tar zxf spark-2.3.0-bin-hadoop2-without-hive.tgz
+    rm spark-2.3.0-bin-hadoop2-without-hive.tgz
     ```
 
 ### 配置spark为默认执行引擎
