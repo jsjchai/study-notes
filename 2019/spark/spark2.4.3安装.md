@@ -28,6 +28,7 @@
     export SPARK_WORKER_MEMORY=4g
     export SPARK_WORKER_CORES=1
     export SPARK_WORKER_INSTANCES=1
+    export SPARK_DIST_CLASSPATH=$(hadoop classpath)
   ```
 3. 配置slaves文件
   ```shell
