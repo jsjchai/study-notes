@@ -15,6 +15,21 @@
 ```
 在hive[官方文档](https://cwiki.apache.org/confluence/display/Hive/Configuration+Properties)中明确说明MapReduce在hive2.0已被弃用,具体原因见[deprecate MR in Hive 2.0](https://issues.apache.org/jira/browse/HIVE-12300)
 
+### 安装spark
+* Hive on Spark 默认支持YARN模式下的Spark
+* hive[源码](https://github.com/apache/hive)pom.xml文件<spark.version>定义了spark版本
+* 安装spark版本不能有任何hive的jar包
+* 安装步骤：
+  * 下载spark[源码](https://archive.apache.org/dist/spark/spark-2.3.0/),解压
+    ```shell
+    tar zxf spark-2.3.0.tgz
+    ```
+  * 编译
+    ```shell
+    cd spark-2.3.0
+    ./dev/make-distribution.sh --name "hadoop2-without-hive" --tgz "-Pyarn,hadoop-provided,hadoop-2.7,parquet-provided,orc-provided"
+    ```
+
 ### 配置spark为默认执行引擎
 1. 将sparkjar包复制到$HIVE_HOME/lib下
   hive2.2.0版本及Spark 2.0.0版本，复制以下jar包
