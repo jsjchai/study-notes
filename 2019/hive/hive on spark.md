@@ -80,5 +80,5 @@
   ```
  ### 参考文档
  * [hive on spark](https://cwiki.apache.org/confluence/display/Hive/Hive+on+Spark%3A+Getting+Started) 
- * [ConfigurationProperties-Spark]https://cwiki.apache.org/confluence/display/Hive/Configuration+Properties#ConfigurationProperties-Spark
+ * [ConfigurationProperties-Spark](https://cwiki.apache.org/confluence/display/Hive/Configuration+Properties#ConfigurationProperties-Spark)
 
