@@ -1,4 +1,5 @@
 ### JDK8 Memory Model
+![img](https://github.com/jsjchai/study-notes/blob/master/2019/jvm/img/jvm%E8%BF%90%E8%A1%8C%E6%A6%82%E8%BF%B0.png)
 #### 运行时数据区
 * 堆（Heap）
  > 堆是所有Java虚拟机线程之间共享的内存区域。它是在虚拟机启动时创建的。所有类实例和数组都在堆中分配（使用new运算符）。垃圾收集器管理的主要区域，可细分为新生代、老年带、Eden区、Form Survivor区、To Survivor区等。堆可以动态扩展或收缩，可以通过" -Xms -Xmx"控制其大小，在物理上处于不连续空间，只要逻辑上连续即可。
