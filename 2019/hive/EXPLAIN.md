@@ -7,11 +7,12 @@ Hive查询被转换成一个阶段序列(它更像是一个有向无环图)。�
 ```
   EXPLAIN DESC  employee;
   
-  # Explain信息
+  # 依赖图
   STAGE DEPENDENCIES:
   Stage-0 is a root stage
   Stage-1 depends on stages: Stage-0
 
+  # 每个阶段的计划
   STAGE PLANS:
   Stage: Stage-0
       Describe Table Operator:
