@@ -42,4 +42,7 @@ public SpringApplication(ResourceLoader resourceLoader, Class<?>... primarySourc
 
 ![images](https://github.com/jsjchai/study-notes/blob/master/2019/springboot/images/ApplicationListener%E5%AE%9E%E7%8E%B0%E7%B1%BB.jpg)
 
+run方法
+* 打印容器启动时间
+* 加载EventPublishingRunListener，并交给SpringApplicationRunListeners管理
 
