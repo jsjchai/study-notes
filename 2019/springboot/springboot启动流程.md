@@ -38,3 +38,7 @@ public SpringApplication(ResourceLoader resourceLoader, Class<?>... primarySourc
 
 ![images](https://github.com/jsjchai/study-notes/blob/master/2019/springboot/images/ApplicationContextInitializer%E5%AE%9E%E7%8E%B0%E7%B1%BB.jpg)
 
+加载的ApplicationListener实现类
+![images](https://github.com/jsjchai/study-notes/blob/master/2019/springboot/images/ApplicationListener%E5%AE%9E%E7%8E%B0%E7%B1%BB.jpg)
+
+
