@@ -34,5 +34,6 @@ public SpringApplication(ResourceLoader resourceLoader, Class<?>... primarySourc
 		this.mainApplicationClass = deduceMainApplicationClass();
 }
 ```
+加载的ApplicationContextInitializer实现类
 ![images](https://github.com/jsjchai/study-notes/blob/master/2019/springboot/images/ApplicationContextInitializer%E5%AE%9E%E7%8E%B0%E7%B1%BB.jpg)
 
