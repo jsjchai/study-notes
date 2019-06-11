@@ -46,3 +46,17 @@ Database -|{  Table
 Table -|{ Column
 
 ```
+## 时序图
+
+```
+autonumber
+actor User as U
+participant MetadataService as S
+database Hive as DB
+
+U -> S : getDatabaseNames
+S -> DB : query
+DB --> DB
+DB --> S
+S -->U
+```
