@@ -1,5 +1,5 @@
 
-# 初识[Kubernetes](https://kubernetes.io/zh/docs/concepts/overview/what-is-kubernetes/)
+# [初识Kubernetes](https://kubernetes.io/zh/docs/concepts/overview/what-is-kubernetes/)
 
 
 
