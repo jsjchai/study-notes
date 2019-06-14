@@ -6,3 +6,8 @@
                       .sorted(Comparator.comparingInt(Integer::byteValue).reversed())
                       .collect(Collectors.toList());
 ```
+
+* 分组
+```
+   cars.stream().collect(Collectors.groupingBy(Car::getCategory))
+```
