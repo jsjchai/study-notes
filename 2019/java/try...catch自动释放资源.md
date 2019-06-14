@@ -3,14 +3,14 @@
 
 ```java
  List<String> data = new ArrayList<String>();
-      try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-        String line;
-        while ((line = br.readLine()) != null) {
-          data.add(line);
-        }
-      } catch (IOException e) {
-        e.printStackTrace();
-      }
+ try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+   String line;
+   while ((line = br.readLine()) != null) {
+     data.add(line);
+   }
+ } catch (IOException e) {
+   e.printStackTrace();
+ }
 ```
 
 上面代码中，数据流会在 try 执行完毕后自动被关闭，前提是，这些可关闭的资源必须实现 java.lang.AutoCloseable 接口
