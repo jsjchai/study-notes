@@ -34,7 +34,7 @@
  User u = JSON.parseObject(jsonString,User.class);
 ```
 ## [joda-time](https://www.joda.org/joda-time/)
-> Java SE 8之前的标准日期和时间类很差。从Java SE 8开始，请使用jdk自带的java.time
+> 由于Java SE 8之前的标准日期和时间类使用起来过于繁琐。joda-time替代了jdk的日期实现。从Java SE 8开始，请使用jdk自带的java.time
 ```java
 DateTime dateTime = new DateTime(2019, 11, 11, 0, 0, 0, 0);
 // 90天以后的时间
