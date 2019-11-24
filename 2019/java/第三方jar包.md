@@ -22,4 +22,14 @@
 * [I/O](https://github.com/google/guava/wiki/IOExplained)
 
 ## [fastjson](https://github.com/alibaba/fastjson)
-> 阿里开源的json工具类
+> 阿里开源的json工具类，可以将java对象转化成json字符串，也可以将JSON字符串转换为等效的Java对象
+```java
+ //java对象转化成json字符串
+ User user = new User();
+ user.setId("10000");
+ user.setName("Tom");
+ String jsonString = JSON.toJSONString(user);
+ 
+ //JSON字符串转换为Java对象
+ User u = JSON.parseObject(jsonString,User.class);
+```
