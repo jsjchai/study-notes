@@ -20,3 +20,6 @@
 * [集合](https://github.com/google/guava/wiki/CollectionUtilitiesExplained)
 * [字符串处理](https://github.com/google/guava/wiki/StringsExplained)
 * [I/O](https://github.com/google/guava/wiki/IOExplained)
+
+## [fastjson](https://github.com/alibaba/fastjson)
+> 阿里开源的json工具类
