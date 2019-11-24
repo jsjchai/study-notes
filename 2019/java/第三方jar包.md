@@ -17,6 +17,6 @@
 
 常用核心库：
 
-* [集合]（https://github.com/google/guava/wiki/CollectionUtilitiesExplained）
+* [集合](https://github.com/google/guava/wiki/CollectionUtilitiesExplained)
 * [字符串处理](https://github.com/google/guava/wiki/StringsExplained)
 * [I/O](https://github.com/google/guava/wiki/IOExplained)
