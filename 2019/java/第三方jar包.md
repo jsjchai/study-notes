@@ -36,9 +36,15 @@
 ## [joda-time](https://www.joda.org/joda-time/)
 > 由于Java SE 8之前的标准日期和时间类使用起来过于繁琐。joda-time替代了jdk的日期实现。从Java SE 8开始，请使用jdk自带的java.time
 ```java
-DateTime dateTime = new DateTime(2019, 11, 11, 0, 0, 0, 0);
+// joda-time
+DateTime dateTime = new DateTime();
 // 90天以后的时间
-dateTime.plusDays(90).toString("E MM/dd/yyyy HH:mm:ss.SSS")
+dateTime.plusDays(90).toString("yyyy-MM-dd hh:mm:ss");
+
+//jdk8以后
+DateTimeFormatter pattern = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss");
+LocalDateTime now = LocalDateTime.now();
+now.plus(day, ChronoUnit.DAYS).format(pattern);
 ```
 
 ## 参考文档
