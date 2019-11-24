@@ -11,3 +11,12 @@
 | Collections | 对java集合框架扩展操作 | 
 |Email|java发送邮件 对javamail的封装|
 |IO|io工具的封装|
+
+## [guava](https://github.com/google/guava)
+> 谷歌开源的常用工具类，遵循高效的java语法实践，高效设计良好的API
+
+常用核心库：
+
+* [集合]（https://github.com/google/guava/wiki/CollectionUtilitiesExplained）
+* [字符串处理](https://github.com/google/guava/wiki/StringsExplained)
+* [I/O](https://github.com/google/guava/wiki/IOExplained)
