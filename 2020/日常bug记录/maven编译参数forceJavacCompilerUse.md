@@ -11,3 +11,6 @@ Exception in thread "main" java.lang.AssertionError
 ```
 mvn compile -Dmaven.compiler.forceJavacCompilerUse=true
 ```
+
+**扩展**
+[maven-compiler-plugin](http://maven.apache.org/plugins/maven-compiler-plugin/compile-mojo.html)
