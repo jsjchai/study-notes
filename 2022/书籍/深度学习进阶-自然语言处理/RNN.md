@@ -1,5 +1,6 @@
 ## 循环神经网络 RNN
 > 循环神经网络（Recurrent Neural Network, RNN）是一类以序列（sequence）数据为输入，在序列的演进方向进行递归（recursion）且所有节点（循环单元）按链式连接的递归神经网络（recursive neural network）
+
 ![image](https://user-images.githubusercontent.com/13389058/159152197-ccef9fa0-054e-4ad4-a676-0794c82cb1b0.png)
 
 
