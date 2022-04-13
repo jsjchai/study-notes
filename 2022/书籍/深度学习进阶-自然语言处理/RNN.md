@@ -28,7 +28,7 @@
 * 时刻t的输入数据为x<sub>t</sub>
 * RNN有两个权重，分别是将输入x转化为输出h的权重W<sub>x</sub>和将前一个RNN层的输出转化为当前时刻的输出的权重W<sub>h</sub>
 * 偏置b
-* ht-1和xt都是行向量
+* h<sub>t-1</sub>和x<sub>t</sub>都是行向量
 * tanh函数（双曲正切函数)
 * 将RNN的输出h<sub>t</sub>称为隐藏状态（hidden state）或隐藏状态向量（hidden state vector）
 
